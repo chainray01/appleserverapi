@@ -35,11 +35,11 @@ header = {
 }
 # JWT Payload
 payload = {
-    "iss": "db1c0031-0e44-45d9-bbb0-4790cf785837",
+    "iss": "db1c0031-0e44-45d9-bbb0-4790cf785234",
     "aud": "appstoreconnect-v1",
     "iat": int(time.time()),
     "exp": int(time.time()) + 60 * 60,  # 60 minutes timestamp
-    "nonce": "6edffe66-b482-11eb-8529-0242ac130001",
+    "nonce": "6edffe66-b482-11eb-8529-0242ac130121",
     "bid": "com.xxx.xxx"
 }
 token = jwt.encode(headers=header, payload=payload, key=_authkey, algorithm="ES256")
